@@ -23,7 +23,7 @@ module.exports = {
         .then(user => res.status(201).json({
             error: false,
             data: user,
-            message: "new user has been created"
+            message: "Usuário criado com sucesso!"
         }))
         .catch(error => res.json({
             error:true,
@@ -47,7 +47,7 @@ module.exports = {
         .then(user => res.status(201).json({
             error: false,
             data: user,
-            message: 'user has been updated'
+            message: 'Usuário editado com sucesso!'
         }))
         .catch(error => res.json({
             error: true,
@@ -63,7 +63,7 @@ module.exports = {
         }})
         .then(status => res.status(201).json({
             error: false,
-            message: 'user has been deleted'
+            message: 'Usuário removido com sucesso!'
         }))
         .catch(error => res.json({
             error: true,
